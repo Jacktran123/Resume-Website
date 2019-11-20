@@ -55,11 +55,13 @@ table {
 
 html, body {
 	height: 100%;
+	width: 90%;
 	
 }
 // My code start here
 @colorlavender: white;
 @Timesnewroman: "Times New Roman", "Times", seriff;
+@mobileview: ~ "(max-width: 590px)";
 body{
 	
 	background-image: url("/image/polaroid.png")
@@ -76,24 +78,31 @@ body{
 		flex-direction: column;
 		justify-content: space-evenly;
 		background-image: url("/image/citycenter.jpg");
-		height: 30vh;
+		height: 40vh;
 		
 	}
 		h1{
 			text-align: center;
 			font-size: 8rem;
 			color:@colorlavender;
+				 @media @mobileview{
+					font-size: 4rem; 
+			
+				}
 			
 		}
 		nav{
 			display: flex;
 			justify-content: space-evenly;
-			font-size: 4rem;
+			font-size: 3rem;
+				
 		}
 			a{
 				color:@colorlavender;
 				text-decoration: none;		
-				
+					@media @mobileview{
+						font-size: 2rem; 
+					}
 
 				&:hover{
 					color: black;
@@ -107,10 +116,13 @@ body{
 	margin-left: 15rem;
 	font-size: 5rem;
 	margin-bottom: 2rem;
+		@media @mobileview{
+			font-size: 3rem;
+}
 }
 .universalp{
 
-	fontsize: 5rem;
+	font-size: 1rem;
 	width: 50vw;
 	padding-left: 6rem;
 	padding-top: 2rem;
@@ -118,30 +130,45 @@ body{
 }
 .universalimage{
 	margin-left: 10%;
+	width: 100%;
 }
 .universalline{
-	margin: 3rem 25rem 3rem 25rem;
-	width: 50%;
+	margin: 3rem 25% 3rem 25%;
+	width: 50vw;
 }
 .aboutme{
 	margin-bottom: 10vh;
+	margin: 0 auto;
 	.aboutme-first{
 		display: flex;
 		justify-content: space-evenly;
+				@media @mobileview{
+					flex-direction: column;
+		}
 	}
-		padding-top: 35vh;
+		padding-top: 45vh;
 		font-family: @Timesnewroman;
 
 		h1{
 		.universalh1();
+			@media @mobileview{
+				font-size: 3rem;
+				margin-left: 25vw
+		}
 		}
 		p{
 		.universalp();
+			@media @mobileview{
+				width: 100%;
+				margin: 0 auto;
+		}
 			
 		}
 		img{
 		.universalimage();
-
+			@media @mobileview{
+				margin-left: 5%;
+		}
 		}
 	
 }
@@ -149,23 +176,41 @@ body{
 	.universalline() ;
 }
 .skills{
+	margin: 0 20vw;
+	
 	h1{
 		.universalh1();
-		margin-left: 40rem;
+		margin-left: 40%;
 	}
-	.skills2{
+	.skills2 {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-evenly;
+		div{
+			margin-left: 30%;
+			
+		}
 		h2{
-			font-size: 3rem;
-
+			font-size: 2.3rem;
+			
+			font-weight: 400;
+			
+				@media @mobileview{
+					font-size: 2rem;
+			}
 		}
 		
+		
 		li{
+			width: 20vw;
+			
 			padding-top: 1rem;
 			line-height: 2.5;
-			font-size: 2.5rem;
+			font-size: 2vw;
 			list-style-type: circle ;
+					@media @mobileview{
+					font-size: 1.5rem;
+					
+					}
 			
 		}
 	}
@@ -173,48 +218,41 @@ body{
 .history{
 	h1{
 		.universalh1();
-		margin-left: 40rem;
+		margin-left: 30%;
 	}
 	table{
 		margin: 0 auto;
+		width: 100%;
+			@media @mobileview{
+			   margin-left: 2rem;
+			}
 	}
 	tr, th,td{
-		border: 3px solid black;
+		border: 0.1rem solid black;
 		text-align: center;
-		font-size: 3rem;
+		font-size: 2rem;
 		background: #f7f7f7;
 
+
 	}
-
 }
-.container2 {
-	border-radius: 5px;
-	background-color: #f2f2f2;
-	padding: 20px;
-
-    input[type=text], select, textarea {
-	width: 100%; 
-	padding: 12px;
-	border: 1px solid #ccc; 
-	border-radius: 4px;
-	box-sizing: border-box; 
-	margin-top: 6px; 
-	margin-bottom: 16px; 
-	resize: vertical 
+.contactme{
+	div{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	
+	h1{
 		
-		[type=submit] {
-	background-color: #4CAF50;
-	color: white;
-	padding: 12px 20px;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-			&:hover {
-	background-color: #45a049;
+		.universalh1();
+		margin-left: 30%;
+	}
+	.email-me{
+		width: 10rem;
+		
+			&:hover{
+				opacity: 0.5;
 			}
-		}	
 	}
 }
-
-
 
