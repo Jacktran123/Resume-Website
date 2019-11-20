@@ -183,7 +183,7 @@ body {
   margin-left: 10%;
 }
 .universalline {
-  margin: 3 3 3 3;
+  margin: 3rem 25rem 3rem 25rem;
   width: 50%;
 }
 .aboutme {
@@ -211,17 +211,70 @@ body {
   margin-left: 10%;
 }
 .line {
-  margin: 3 3 3 3;
+  margin: 3rem 25rem 3rem 25rem;
   width: 50%;
-}
-.skills {
-  font-family: "Times New Roman", "Times", seriff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .skills h1 {
   margin-left: 15rem;
   font-size: 5rem;
   margin-bottom: 2rem;
+  margin-left: 40rem;
+}
+.skills .skills2 {
+  display: flex;
+  justify-content: space-around;
+}
+.skills .skills2 h2 {
+  font-size: 3rem;
+}
+.skills .skills2 li {
+  padding-top: 1rem;
+  line-height: 2.5;
+  font-size: 2.5rem;
+  list-style-type: circle ;
+}
+.history h1 {
+  margin-left: 15rem;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  margin-left: 40rem;
+}
+.history table {
+  margin: 0 auto;
+}
+.history tr,
+.history th,
+.history td {
+  border: 3px solid black;
+  text-align: center;
+  font-size: 3rem;
+  background: #f7f7f7;
+}
+.container2 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.container2 input[type=text],
+.container2 select,
+.container2 textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.container2 input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container2 input[type=submit]:hover {
+  background-color: #45a049;
 }

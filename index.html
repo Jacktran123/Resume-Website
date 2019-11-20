@@ -19,32 +19,109 @@
       <header>
         <h1>My Resume</h1>
         <nav>
-          <a href="">About me</a>
-          <a href="">My Skills</a>
-          <a href="">Work History</a>
+          <a href="#aboutme">About me</a>
+          <a href="#skills">My Skills</a>
+          <a href="#history">Work History</a>
           <a href="">Portfolio</a>
         </nav>
       </header>
     </div> 
-    <section class="aboutme">
+    <section id="aboutme" class="aboutme">
       <div class="aboutme-first">
         <div>
           <h1>About Me</h1>
-          <p>I'm passionate about coding and its role in changing human life. That's why I dedicated my life to become a Software Engineer. And I believe, with the right company and my skill, we can innovate the world like never before.
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+          <p>I'm passionate about coding. It is a powerful tools in changing human life. That's why I dedicated my life to become a Software Engineer. And I believe, with the right company and my skill, we can innovate the world like never before.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it<a name="skills"></a> to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions  of Lorem Ipsum. </p>
         </div>
         <div>
           <img src="/image/computer-programer.jpeg"/>
         </div>
       </div>
-    <img class="line" src="/image/2018-blue-calligraphic-line.png"/>
+    
     </section>
-    <section class=" skills">
+    <img class="line" src="/image/2018-blue-calligraphic-line.png"/>
+    
+    <section  class="skills">
       <h1>My Skills</h1>
-      <div class="typeofskills">
-        <h2>Technical Skills</h2>
-        <h2>Soft Skill</h2>
+      <div class="skills2">
+        <div>
+          <h2>Technical Skills</h2>
+          <ul>
+            <li>Fluently in every coding languages</li>
+            <li>Deep understanding of computer</li>
+            <li>Troubleshooting Skill</li>
+            <li>Photo Editing</li>
+            <li>Beginner in Machine Learning</li>
+            <li>Co-founder of Uber</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Soft Skills</h2>
+          <ul>
+            <li>Effective Communication</li>
+            <li>Great at collaboration</li>
+            <li>Time efficiency</li>
+          </ul>
+        </div>
       </div>
     </section>
-  </body>
+    <img id="history" class="line" src="/image/2018-blue-calligraphic-line.png"/>
+    <section  class="history">
+        <h1>Work History</h1>
+        <div class="history2">
+            <table style="width:80%">
+                <tr>
+                  <th></th>
+                  <th>Company</th>
+                  <th>Role</th>
+                  <th>Year</th>
+                </tr>
+                <tr>
+                  <th>1st</th>
+                  <td>Apple</td>
+                  <td>Product Manager</td>
+                  <td>2015</td>
+                </tr>
+                <tr>
+                  <th>2nd</th>
+                  <td>Microsoft</td>
+                  <td>CEO</td>
+                  <td>2016</td>
+                </tr>
+                <tr>
+                  <th>3rd</th>
+                  <td>Samsung</td>
+                  <td>Software Engineer</td>
+                  <td>2017</td>
+                </tr>
+              </table>
+        </div>
+
+      </section>
+      <img class="line" src="/image/2018-blue-calligraphic-line.png"/>
+    </body>
+      <div class="container2">
+          <form action="action_page.php">
+        
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
+          </form>
+        </div>
+
 </html>
